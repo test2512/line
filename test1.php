@@ -12,7 +12,7 @@ $bot = new BOT_API($channelSecret, $access_token);
 if (!empty($bot->isEvents)) {
 		
     //$bot->replyMessageNew($bot->replyToken, json_encode($bot->message));
-      $bot->sendMessageNew('Uafb8898da1f464f55adfe6806a532405', 'Hello World !!');
+      $bot->sendMessageNew('Uafb8898da1f464f55adfe6806a532405', 'Hello Saha');
       
 	
   //  $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('hello');
