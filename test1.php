@@ -12,10 +12,8 @@ $bot = new BOT_API($channelSecret, $access_token);
 if (!empty($bot->isEvents)) {
 		
     //$bot->replyMessageNew($bot->replyToken, json_encode($bot->message));
-      $bot->sendMessageNew('Uafb8898da1f464f55adfe6806a532405', 'Hello Saha');
-      //$bot->sendMessageNew('u25c733ee101047846d54984df0dfb713', 'Hello World !!');	
-      //$bot->sendMessageNew('u840df9eb39827a773726d39a87e973f3', 'Hello World !!');
-	
+      $bot->sendMessageNew('Uafb8898da1f464f55adfe6806a532405', 'Hello World !!');
+      
 	
   //  $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('hello');
     //$bot->pushMessage('u25c733ee101047846d54984df0dfb713', $textMessageBuilder);	
