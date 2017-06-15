@@ -22,7 +22,7 @@ if (!empty($bot->isEvents)) {
    // $bot->pushMessage('u840df9eb39827a773726d39a87e973f3', $textMessageBuilder);	
 //	fang 
 //u840df9eb39827a773726d39a87e973f3	
-
+echo $bot->response->getHTTPStatus . ' ' . $bot->response->getRawBody(); 
     if ($bot->isSuccess()) {
         echo 'Succeeded!';
         exit();
