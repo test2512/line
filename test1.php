@@ -12,6 +12,8 @@ $bot = new BOT_API($channelSecret, $access_token);
 if (!empty($bot->isEvents)) {
 		
     $bot->replyMessageNew($bot->replyToken, json_encode($bot->message));
+    //$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('hello');
+    //$bot->pushMessage('<to>', $textMessageBuilder);	
 
     if ($bot->isSuccess()) {
         echo 'Succeeded!';
@@ -23,3 +25,12 @@ if (!empty($bot->isEvents)) {
     exit();
 
 }
+
+///////
+//$httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient('<channel access token>');
+//$bot = new \LINE\LINEBot($httpClient, ['channelSecret' => '<channel secret>']);
+
+//$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('hello');
+//$response = $bot->pushMessage('<to>', $textMessageBuilder);
+
+//echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
